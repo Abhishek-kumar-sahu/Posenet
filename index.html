@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PoseNet App</title>
+    <meta name="description" content="Real-time human pose detection using PoseNet and p5.js." />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.10.3/dist/ml5.min.js"></script>
+    <script src="sketch.js" defer></script>
+</head>
+
+<body>
+    <noscript>
+        <div class="noscript-warning">
+            <p>This app requires JavaScript to run. Please enable JavaScript in your browser settings.</p>
+        </div>
+    </noscript>
+
+    <div class="container">
+        <header>
+            <h1>PoseNet Real-Time Tracker</h1>
+        </header>
+
+        <main>
+            <div id="status">Initializing PoseNet...</div>
+            <div class="video-container" id="video-holder">
+               
+            </div>
+            <div class="instructions">
+                <p>Stand in front of your webcam to see your pose detected in real-time.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created in &copy; 2025</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+
